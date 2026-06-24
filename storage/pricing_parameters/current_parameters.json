@@ -1,0 +1,135 @@
+{
+  "currency": "BRL",
+  "minimum_order_value_brl": 850.0,
+  "materials": [
+    {
+      "material_id": "steel_1045",
+      "label": "Aço 1045",
+      "density_g_cm3": 7.85,
+      "material_price_brl_kg": 11.0,
+      "machinability_factor": 1.0
+    },
+    {
+      "material_id": "steel_1020",
+      "label": "Aço 1020",
+      "density_g_cm3": 7.87,
+      "material_price_brl_kg": 7.8,
+      "machinability_factor": 0.95
+    },
+    {
+      "material_id": "steel_p20",
+      "label": "Aço P20",
+      "density_g_cm3": 7.8,
+      "material_price_brl_kg": 19.0,
+      "machinability_factor": 1.18
+    },
+    {
+      "material_id": "steel_h13",
+      "label": "Aço H13",
+      "density_g_cm3": 7.75,
+      "material_price_brl_kg": 40.0,
+      "machinability_factor": 1.35
+    },
+    {
+      "material_id": "stainless_420",
+      "label": "Inox 420",
+      "density_g_cm3": 7.74,
+      "material_price_brl_kg": 35.0,
+      "machinability_factor": 1.45
+    },
+    {
+      "material_id": "aluminum",
+      "label": "Alumínio",
+      "density_g_cm3": 2.7,
+      "material_price_brl_kg": 24.0,
+      "machinability_factor": 0.62
+    },
+    {
+      "material_id": "cast_iron",
+      "label": "Ferro fundido",
+      "density_g_cm3": 7.2,
+      "material_price_brl_kg": 7.2,
+      "machinability_factor": 0.9
+    },
+    {
+      "material_id": "copper",
+      "label": "Cobre",
+      "density_g_cm3": 8.96,
+      "material_price_brl_kg": 55.0,
+      "machinability_factor": 1.22
+    }
+  ],
+  "base_mrr_by_material": {
+    "steel_1045": 20000.0,
+    "steel_1020": 25000.0,
+    "steel_p20": 18000.0,
+    "steel_h13": 16000.0,
+    "stainless_420": 14000.0,
+    "aluminum": 60000.0,
+    "cast_iron": 30000.0,
+    "copper": 26000.0
+  },
+  "removal_rates": {
+    "bench_milling": {
+      "removal_rate_cm3_hour": 3500.0
+    },
+    "vertical_milling": {
+      "removal_rate_cm3_hour": 2000.0
+    },
+    "portal_milling": {
+      "removal_rate_cm3_hour": 18000.0
+    },
+    "complex_3_axis_milling": {
+      "removal_rate_cm3_hour": 2500.0
+    },
+    "precision_fixture_required": {
+      "removal_rate_cm3_hour": 3000.0
+    },
+    "engineering_review_required": {
+      "removal_rate_cm3_hour": 2000.0
+    }
+  },
+  "complexity_multipliers": {
+    "low": 1.0,
+    "medium": 2.0,
+    "high": 3.0
+  },
+  "risk_multipliers": {
+    "low": 1.0,
+    "medium": 1.12,
+    "high": 1.32
+  },
+  "finishing_multipliers": {
+    "low_feature_density_multiplier": 1.0,
+    "medium_feature_density_multiplier": 1.12,
+    "high_feature_density_multiplier": 1.28
+  },
+  "markup_tiers": [
+    {
+      "quantity_min": 1,
+      "quantity_max": 5,
+      "markup_floor": 1.6,
+      "markup_ceiling": 1.8
+    },
+    {
+      "quantity_min": 6,
+      "quantity_max": 20,
+      "markup_floor": 1.4,
+      "markup_ceiling": 1.6
+    },
+    {
+      "quantity_min": 21,
+      "quantity_max": null,
+      "markup_floor": 1.28,
+      "markup_ceiling": 1.45
+    }
+  ],
+  "risk_markup_adjustment": {
+    "high_risk_ceiling_addition": 0.12,
+    "engineering_review_ceiling_addition": 0.18
+  },
+  "default_stock_allowance_mm": 5.0,
+  "default_supply_mode": "moldsia_supplies",
+  "version": "2026-06-02T12:40:55.796575+00:00",
+  "updated_at": "2026-06-02T12:40:55.796575+00:00"
+}
